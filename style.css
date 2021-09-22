@@ -2,10 +2,6 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-:root{
-    --main-dark-color: ;
-    --main-light-color: ;
-}
 h1{
    font-size: 40px;
    position:absolute;
@@ -28,14 +24,15 @@ h1{
     right:0;
     float: right;
     margin-bottom: 0%;
+    background-color:rgb(0, 128, 107);
+   align-items: stretch;
+   font-size: 16px;
  }
 
  a:link, a:visited {
-    background-color:rgb(0, 128, 107);
     color: white;
     padding: 14px 25px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
   }
   
@@ -74,6 +71,11 @@ h3{
    padding: 20px; 
 }
 
+#about-me{
+   font-size: 15px;
+   margin: 5px;
+}
+
  .partitions{
     align-items: center;
     display: inline-flex;
@@ -91,12 +93,11 @@ h3{
 }
 
  .work-partition{
-   align-items: center;
    display: inline-flex;
    width: 68%;
    background-color:white;
    border-left: 5px solid rgb(0, 128, 107);
-   height: 450px;
+   height: 1000px;
  }
 
  .partition-contactme{
@@ -104,8 +105,8 @@ h3{
     width: 68%;
     height: 150px;
     border-left: 5px solid rgb(0, 128, 107);
-    justify-content:center;
-    align-items:stretch;
+    justify-content:space-evenly;
+    align-items:center;
  }
 
  h3{
@@ -114,32 +115,68 @@ h3{
      color:rgb(0, 128, 107)
  }
 
- .big-box{
-    flex-grow: inherit;
-    position: absolute;
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    height: 200px;
-
- }
-
- .small-box{
-    flex-grow: inherit;
-    position: absolute;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    width: 48%;
-    height: 100px;
- }
+.parent-box {
+   margin: 5%;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: fr repeat(3, 1fr);
+   grid-column-gap: 10px;
+   grid-row-gap: 5px;
+}
+#big-box { grid-area: 1 / 1 / 3 / 3;
+   width: 800px;
+   height: 400px;
+}
+#small-box-1 { grid-area: 3 / 1 / 4 / 2; 
+   width: 400px;
+   height: 200px;
+}
+#small-box-2 { grid-area: 3 / 2 / 4 / 3; 
+   width: 400px;
+   height: 200px;
+}
+#small-box-3 { grid-area: 4 / 2 / 5 / 3; 
+   width: 400px;
+   height: 200px;
+}
+#small-box-4 { grid-area: 4 / 1 / 5 / 2; 
+   width: 400px;
+   height: 200px;
+}
 
 @media screen and (max-width: 880px) {
+   .links{
+      flex-direction: column;
+   };
+   .parent-box {
+      margin: 5%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 5px;
+      };
+   #big-box { grid-area: 1 / 1 / 2 / 2; 
+      width: 400px;
+      height: 200px;
+   }
+   #small-box-1 { grid-area: 2 / 1 / 3 / 2; }
+   #small-box-2 { grid-area: 3 / 1 / 4 / 2; }
+   #small-box-3 { grid-area: 4 / 1 / 5 / 2; }
+   #small-box-4 { grid-area: 5 / 1 / 6 / 2; }
+}
+
+@media screen and (max-width: 1300px){
 
 }
 
-img {
-    position: relative;
-    height:  15vw;
-    width: 68%;
+#img {
+   height:400px;
+
+   max-width:800px;
+}
+#img-s{
+   height:200px;
+
+   max-width:400px;
 }
