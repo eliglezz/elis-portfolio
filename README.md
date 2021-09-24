@@ -10,3 +10,4 @@ I ended up doing an overhaul at one point.
 I had to how grids worked but I now have a good grasp on what im doing now.
 I am sure I will look back at this and see how obvious mistakes.
 [Full page](https://eliglezz.github.io/elis-portfolio/)
+![Untitled-1](https://user-images.githubusercontent.com/61998811/134297119-c23f9d93-e36a-4407-a312-ce70a61c9176.png)
