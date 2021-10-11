@@ -1,0 +1,195 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  font-size: 40px;
+  position: absolute;
+  display: inline;
+  color: aliceblue;
+  background-color: black;
+  top: 15%;
+  padding: 5px 10px 5px 30px;
+}
+
+.header {
+  position: relative;
+  background-color: rgb(0, 128, 107);
+  height: 70px;
+}
+
+.links {
+  display: inline-flex;
+  bottom: 0;
+  right: 0;
+  float: right;
+  margin-bottom: 0%;
+  background-color: rgb(0, 128, 107);
+  align-items: stretch;
+  font-size: 16px;
+}
+
+a:link,
+a:visited {
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  display: inline-block;
+}
+
+a:hover{
+  background-color: black;
+}
+.subhead {
+  width: 100%;
+  background-color: rgb(0, 128, 107);
+  height: 100px;
+}
+
+body figure h2 {
+  text-align: right;
+  font-size: 30px;
+  position: relative;
+  top: 40%;
+}
+
+.partition-box {
+  display: inline-flex;
+  width: 16%;
+  background-color: white;
+  height: 100%;
+}
+
+h3 {
+  font-size: 35px;
+  justify-content: center;
+  color: rgb(0, 128, 107);
+}
+
+h4{
+  font-size: 5px;
+  position: absolute;
+  display: inline;
+  color: aliceblue;
+  background-color: black;
+  top: 15%;
+  padding: 5px 10px 5px 30px;
+}
+
+#partition-title {
+  text-align: center;
+  min-width: 15%;
+  padding: 20px;
+}
+
+#about-me {
+  font-size: 15px;
+  margin: 5px;
+}
+
+.partitions {
+  align-items: center;
+  display: inline-flex;
+  width: 68%;
+  background-color: white;
+  height: 250px;
+  border-left: 5px solid rgb(0, 128, 107);
+}
+
+#work-heading {
+  display: inline-flex;
+  width: 16%;
+  background-color: white;
+  height: 100%;
+}
+
+.work-partition {
+  display: inline-flex;
+  width: 68%;
+  background-color: white;
+  border-left: 5px solid rgb(0, 128, 107);
+}
+
+.partition-contactme {
+  display: inline-flex;
+  width: 68%;
+  height: 150px;
+  border-left: 5px solid rgb(0, 128, 107);
+  justify-content: space-around;
+  align-items: center;
+}
+
+li{
+  list-style: none;
+}
+
+li a {
+   background-color: rgb(0, 128, 107);
+}
+
+.bg{
+  background-color: rgb(0, 128, 107);
+}
+
+@media screen and (max-width: 880px) {
+  .links {
+    flex-direction: column;
+  }
+  .subhead {
+    height: 200px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .header {
+    height: 110px;
+  }
+  body figure h2 {
+    font-size: 15px;
+  }
+  .partitions {
+    height: 350px;
+  }
+  a{
+     size: 10px;
+  }
+  h3 {
+    size: 10px;
+  }
+  .partition-contactme {
+    height: 250px;
+  }
+  .work-partition {
+    height: 2250px;
+  }
+
+}
+
+@media screen and (max-width: 1300px) {
+}
+
+#img {
+  width: 100%;
+  height: 100%;
+}
+#img-s {
+  width: 100%;
+  height: 100%;
+}
+img:hover {
+  filter: blur(5px);
+}
+
+.container a{
+  background-color:white;
+}
+
+.text-block {
+  position:inherit;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
