@@ -43,7 +43,7 @@ a:hover{
 .subhead {
   width: 100%;
   background-color: rgb(0, 128, 107);
-  height: 100px;
+  height: 200px;
 }
 
 body figure h2 {
@@ -131,7 +131,7 @@ li a {
   background-color: rgb(0, 128, 107);
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1000px) {
   .links {
     flex-direction: column;
   }
@@ -151,21 +151,51 @@ li a {
     height: 350px;
   }
   a{
-     size: 10px;
-  }
-  h3 {
     size: 10px;
   }
+  h3 {
+    size: 5px;
+  }
   .partition-contactme {
-    height: 250px;
+    height: 200px;
   }
   .work-partition {
-    height: 2250px;
+    height: 500px;
+  }
+  .container {
+    height: 200px;
+    flex: auto;
+  }
+
+  a:link {
+    padding: 0;
+    size: 2px;
+    flex-direction: column;
+    display: flex;
+  }
+  .partition-contactme {
+    display: inline-flex;
+    flex-direction: column;
+    width: 68%;
+    height: 200px;
+    border-left: 5px solid rgb(0, 128, 107);
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .partition-box{
+    width: fit-content;
+  }
+  #partition-title {
+    text-align: center;
+    box-sizing: content-box;
+    min-width: 15%;
+    padding: 20px;
   }
 
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
 }
 
 #img {
